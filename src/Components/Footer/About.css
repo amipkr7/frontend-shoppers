@@ -1,0 +1,22 @@
+.main{
+    /* display: flex; */
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 50px;
+ /* margin-top: 20px; */
+    color: palevioletred;
+    background:linear-gradient(180deg,rgb(237, 156, 204),white)
+}
+
+.containt
+{
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 1200px;
+    margin-bottom: 50px;
+    margin-left: 150px;
+    font-weight: 300;
+}
