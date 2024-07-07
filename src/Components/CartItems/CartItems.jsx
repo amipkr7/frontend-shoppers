@@ -26,9 +26,9 @@ const CartItems = () => {
                 <div className="cartitems-format cartitems-format-main">
                   <img className="carticon-product-icon" src={e.image} alt="" />
                   <p>{e.name}</p>
-                  <p>${e.new_price}</p>
+                  <p>₹{e.new_price}</p>
                   <button className="cartitems-quantity">{cartItems[e.id]}</button>
-                  <p>${e.new_price * cartItems[e.id]}</p>
+                  <p>₹{e.new_price * cartItems[e.id]}</p>
                   <img
                     src={remove_icon}
                     onClick={() => {
@@ -45,13 +45,15 @@ const CartItems = () => {
         })}
 
         <div className="cartitems-down">
-          <h1>cartTotals</h1>
+          <h1>cartTotals</h1><br /><br /><br />
           <div className="cartitems-total">
             <br />
-            <div>
+           
+          </div>
+          <div>
               <div className="cartitems-total-item">
                 <p>Subtotal</p>
-                <p>${getTotalCartAmount()}</p>
+                <p>₹{getTotalCartAmount()}</p>
               </div>
               <hr />
 
@@ -62,17 +64,16 @@ const CartItems = () => {
               <hr />
               <div className="cartitems-total-item">
                 <h3>Total</h3>
-                <h3>${getTotalCartAmount()}</h3>
+                <h3>₹{getTotalCartAmount()}</h3>
               </div>
             </div>
-          </div>
-          <div className="cartitems-promocode">
+          {/* <div className="cartitems-promocode">
             <p>If you have a promo code, enter it here</p>
             <div className="cartitems-promobox">
               <input type="text" placeholder="promo-code" />
               <button>Submit</button>
             </div>
-          </div>
+          </div> */}
         </div>
         <button className="btn">Proceed to checkout</button>
       </div>

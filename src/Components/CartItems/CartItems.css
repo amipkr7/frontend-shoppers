@@ -101,4 +101,9 @@
     cursor: pointer;
 }
 
+.cartitems-total-item{
+    margin:20px 20px;
+    gap: 50px;
+}
+
 
